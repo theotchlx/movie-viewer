@@ -17,3 +17,10 @@ Receiving objects: 100% (4/4), done.
 ```
 
 > Tip: We use `nvm` (node version manager) to better manage our Node versions. This is merely an advice. You don't need to use `nvm`.
+> We will also use `pnpm` (performant npm) as a more performant alternative to npm. Once installed, run the following commands:
+
+```bash
+$ pnpm init
+Wrote to /home/theo-tchlx/.local/share/Trash/files/movie-viewer.3/package.json
+...
+```
