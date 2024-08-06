@@ -23,6 +23,7 @@ Run the projet:
 
 ```bash
 $ pnpm install
+
 ...
 $ pnpm start
 ...
