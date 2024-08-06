@@ -20,7 +20,8 @@ Receiving objects: 100% (4/4), done.
 > We will also use `pnpm` (performant npm) as a more performant alternative to npm. Once installed, run the following commands:
 
 ```bash
-$ pnpm init
-Wrote to /home/theo-tchlx/.local/share/Trash/files/movie-viewer.3/package.json
+$ pnpm install
+...
+$ pnpm start
 ...
 ```
