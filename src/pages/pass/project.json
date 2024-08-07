@@ -1,0 +1,19 @@
+{
+  "name": "pass",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "src/pages/pass/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/src/pages/pass",
+        "main": "src/pages/pass/src/index.ts",
+        "tsConfig": "src/pages/pass/tsconfig.lib.json",
+        "assets": ["src/pages/pass/*.md"]
+      }
+    }
+  }
+}

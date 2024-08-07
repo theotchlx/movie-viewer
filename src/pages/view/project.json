@@ -1,0 +1,19 @@
+{
+  "name": "view",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "src/pages/view/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/src/pages/view",
+        "main": "src/pages/view/src/index.ts",
+        "tsConfig": "src/pages/view/tsconfig.lib.json",
+        "assets": ["src/pages/view/*.md"]
+      }
+    }
+  }
+}
