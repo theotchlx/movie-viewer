@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@movie-viewer/ui": ["ui/src/index.ts"]
+      "@movie-viewer/pass": ["src/pages/pass/src/index.ts"],
+      "@movie-viewer/ui": ["ui/src/index.ts"],
+      "@movie-viewer/view": ["src/pages/view/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
