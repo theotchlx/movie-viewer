@@ -1,1 +1,1 @@
-export * from './lib/ui/pass';
+export * from './lib/ui/pass-page';

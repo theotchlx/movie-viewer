@@ -1,33 +1,27 @@
 import {
-  Menubar,
-  MenubarContent,
-  MenubarItem,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarShortcut,
-  MenubarTrigger,
-} from '@/components/ui/menubar';
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from 'react-router-dom';
+import PassPage from '@/pages/pass/src/lib/ui/pass-page';
+import ViewPage from '@/pages/view/src/lib/ui/view-page';
+import MoviePage from '@/pages/view/src/lib/ui/movie-page';
 
 export function App() {
   return (
     <div>
-      <Menubar>
-        <MenubarMenu>
-          <MenubarTrigger>File</MenubarTrigger>
-          <MenubarContent>
-            <MenubarItem>
-              New Tab <MenubarShortcut>⌘T</MenubarShortcut>
-            </MenubarItem>
-            <MenubarItem>New Window</MenubarItem>
-            <MenubarSeparator />
-            <MenubarItem>Share</MenubarItem>
-            <MenubarSeparator />
-            <MenubarItem>Print</MenubarItem>
-          </MenubarContent>
-        </MenubarMenu>
-      </Menubar>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Navigate to="/pass" />} />
+          <Route path="/pass" element={<PassPage />} />
+          <Route path="/view" element={<ViewPage />} />
+          <Route path="/view/:movieId" element={<MoviePage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
+
 
 export default App;
