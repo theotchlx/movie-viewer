@@ -1,4 +1,6 @@
+import { Button } from '@/components/ui/button';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import usePassPageLogic from '../logic/pass-page-logic';
 
 const PassPage: React.FC = () => {
@@ -14,6 +16,11 @@ const PassPage: React.FC = () => {
           className="w-full px-4 py-2 border rounded"
           placeholder="Enter passphrase"
         />
+        <div className='flex mt-3 justify-center'>
+          <Button  variant="secondary">
+            <Link href="/login">Enter</Link>
+          </Button>
+        </div>
       </div>
     </div>
   );
