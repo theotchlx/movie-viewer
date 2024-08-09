@@ -14,6 +14,10 @@ const useViewPageLogic = () => {
     setMovies([
       { id: 1, title: 'Movie 1', category: 'Action' },
       { id: 2, title: 'Movie 2', category: 'Drama' },
+      { id: 1, title: 'Movie 1', category: 'Action' },
+      { id: 2, title: 'Movie 2', category: 'Drama' },
+      { id: 1, title: 'Movie 1', category: 'Action' },
+      { id: 2, title: 'Movie 2', category: 'Drama' },
       // more movies
     ]);
   }, []);
