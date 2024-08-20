@@ -1,4 +1,5 @@
-# movie-viewer
+# movie-viewer is kil!
+### I made movie-viewer to tech myself React, Vite, Nx... And that's done for now.
 
 movie-viewer is a frontend Web application to watch movies.
 
