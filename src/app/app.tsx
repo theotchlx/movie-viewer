@@ -13,7 +13,7 @@ export function App() {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Navigate to="/pass" />} />
+          <Route path="/*" element={<Navigate to="/pass" />} />
           <Route path="/pass" element={<PassPage />} />
           <Route path="/view" element={<ViewPage />} />
           <Route path="/view/:movieId" element={<MoviePage />} />

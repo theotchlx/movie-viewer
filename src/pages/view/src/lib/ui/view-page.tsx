@@ -15,7 +15,7 @@ const ViewPage: React.FC = () => {
   return (
     <div className="p-4">
       <div className="mb-4 text-center">
-        <h1 className="text-2xl font-bold">Movies</h1>
+        <h1 className="text-2xl font-bold">Movie-Viewer Overview Hub Thingy-thing</h1>
       </div>
 
       <div className="flex mb-4">
@@ -34,7 +34,7 @@ const ViewPage: React.FC = () => {
         </Menubar>
 
         <Menubar>
-          <MenubarMenu className="ml-4">
+          <MenubarMenu>
             <MenubarTrigger>Settings</MenubarTrigger>
             <MenubarContent>
               <MenubarItem>Dark/light mode</MenubarItem>
@@ -48,7 +48,8 @@ const ViewPage: React.FC = () => {
           <Link key={movie.id} to={`/view/${movie.id}`}>
             <div className="p-4 bg-white rounded-lg shadow">
               <h2 className="text-xl">{movie.title}</h2>
-              <p>{movie.category}</p>
+              <p className="text-sm text-gray-600">{movie.category}</p>
+              <p className="mt-1">{movie.description}</p>
             </div>
           </Link>
         ))}

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import usePassPageLogic from '../logic/pass-page-logic';
 
 const PassPage: React.FC = () => {
-  const { passphrase, handleChange } = usePassPageLogic();
+  const { passphrase, handleChange, handleOnClick } = usePassPageLogic();
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
@@ -17,7 +17,7 @@ const PassPage: React.FC = () => {
           placeholder="Enter passphrase"
         />
         <div className='flex mt-3 justify-center'>
-          <Button  variant="secondary">
+          <Button variant="secondary" onClick={handleOnClick}>
             <Link href="/login">Enter</Link>
           </Button>
         </div>

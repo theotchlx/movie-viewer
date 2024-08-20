@@ -1,12 +1,6 @@
+import Movie from '@/interfaces/movie';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-
-interface Movie {
-  id: number;
-  title: string;
-  category: string;
-  description: string;
-}
 
 const useMoviePageLogic = () => {
   const { movieId } = useParams<{ movieId: string }>();
